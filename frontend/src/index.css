@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-600;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(37, 99, 235, 0.05), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.04), transparent 35%);
+  background-attachment: fixed;
+}
+
+::selection {
+  @apply bg-accent/15 text-slate-900;
+}
+
+.section-heading {
+  @apply flex items-center text-2xl font-bold text-slate-900 sm:text-3xl;
+}
+
+.section-alt {
+  @apply bg-slate-50;
+}
